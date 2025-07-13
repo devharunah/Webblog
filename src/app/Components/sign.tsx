@@ -34,7 +34,7 @@ const Signin = () => {
         setMessage(data.message || 'Sigup failed.')
       }
     } catch(error){
-        setMessage('Something went wrong')
+        setMessage(`Something went wrong ${error}`)
     } finally{
         setLoading(false)
     }

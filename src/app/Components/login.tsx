@@ -20,7 +20,7 @@ const Login = () => {
                     <button className="bg-blue-500 text-white px-4 py-2 rounded">
                         Submit
                     </button>
-                    <p>Don't have account <span
+                    <p>No account <span
                     onClick={ ()=>{router.push("/signup")}}
                      className="font-bold text-blue-500 cursor-pointer " >signup</span> </p>
                 </div>
