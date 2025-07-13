@@ -1,6 +1,8 @@
 'use client'
 import React, { useState } from "react";
+import { useRouter } from "next/navigation";
 const Signin = () => {
+        const router = useRouter()
       const [form, setForm] = useState({
     firstName: '',
     secondName: '',
@@ -18,6 +20,9 @@ const Signin = () => {
     e.preventDefault();
     setLoading(true);
     setMessage('');
+    window.alert('Account was succeccfuly created')
+    router.push('/')
+
 
     try{
      const res = await fetch('/api/signup', {
